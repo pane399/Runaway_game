@@ -23,8 +23,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void FixedUpdate() {
-        
+    void FixedUpdate() {        
         if(rigid.velocity.y < 0){
             Debug.DrawRay(rigid.position, Vector3.down * 2, new Color(0, 1, 0));
 
@@ -32,7 +31,7 @@ public class Player : MonoBehaviour
 
             if(rayHit.collider != null){
                 if(rayHit.distance < 1){
-                    Debug.Log(rayHit.collider.name);
+                    Debug.Log(rayHit.collider);
                     isJumping = false;
                 }
             }
