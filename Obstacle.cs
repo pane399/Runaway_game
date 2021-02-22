@@ -36,6 +36,9 @@ public class Obstacle : MonoBehaviour
         if (player.isJumping && playerRigid.velocity.y > 0){
             boxCol.enabled = false;
         }
+        else if (player.isJumping && (playerRigid.position.y - 1) < rigid.position.y + 0.25f && playerRigid.velocity.y <= 0){
+            boxCol.enabled = false;
+        }
         else {
             boxCol.enabled = true;
         }
