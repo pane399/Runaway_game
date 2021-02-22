@@ -13,3 +13,6 @@ Now we need to make pulling objects to manage obstacles.
 ## 21.02.03
 Edited Obstacle's moving system and collider system. When player jumps, collider would be diabled and would be enabled again if player lands on the obstacle. <br>
 Now I have to make spawning point and manager for obstacles.
+
+## 21.02.22
+Edited Obstacle's collider again. Cuz it crash with player, and than their move was disturbed.<br>Need to study more frequently! Let's make it~~!!
