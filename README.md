@@ -16,3 +16,6 @@ Now I have to make spawning point and manager for obstacles.
 
 ## 21.02.22
 Edited Obstacle's collider again. Cuz it crash with player, and than their move was disturbed.<br>Need to study more frequently! Let's make it~~!!
+
+## 21.02.26
+Edited player's jump system. From ray casting to oncollision fuction. And also made obstacle's spawning points. For now, they randomly instantiated, so it looks quite not neat. We have to make a script for them. Next time, we would make enemies, and attacking system.
