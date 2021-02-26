@@ -23,19 +23,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    void FixedUpdate() {
-        
-        if(rigid.velocity.y < 0){
-            Debug.DrawRay(rigid.position, Vector3.down * 2, new Color(0, 1, 0));
-
-            RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down * 2, 1, LayerMask.GetMask("Platform"));
-
-            if(rayHit.collider != null){
-                if(rayHit.distance < 1){
-                    Debug.Log(rayHit.collider.name);
-                    isJumping = false;
-                }
-            }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Platform"){
+            isJumping = false;
         }
     }
 }
