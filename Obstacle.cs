@@ -29,16 +29,17 @@ public class Obstacle : MonoBehaviour
         }
     }
 
-    void offCollider(){
+    void offCollider() //Platform's Collider Off function
+    {
         Player player = GameObject.Find("Player").GetComponent<Player>();
         Rigidbody2D playerRigid = player.GetComponent<Rigidbody2D>();
 
         if (player.isJumping && playerRigid.velocity.y > 0){
             boxCol.enabled = false;
         }
-        else if (player.isJumping && (playerRigid.position.y - 1) < rigid.position.y + 0.25f && playerRigid.velocity.y <= 0){
+        else if (player.isJumping && (playerRigid.position.y - 1) < rigid.position.y + 0.5f && playerRigid.velocity.y <= 0){
             boxCol.enabled = false;
-        }
+            }
         else {
             boxCol.enabled = true;
         }
