@@ -19,3 +19,6 @@ Edited Obstacle's collider again. Cuz it crash with player, and than their move 
 
 ## 21.02.26
 Edited player's jump system. From ray casting to oncollision fuction. And also made obstacle's spawning points. For now, they randomly instantiated, so it looks quite not neat. We have to make a script for them. Next time, we would make enemies, and attacking system.
+
+## 21.03.24
+Made textfile reader for obstacle instantiation. If I want more stages, I need to make more files. This game still don't have any 'game charateristics'. So, I need more enemies, skills, moves, animations, images and so on. Try best!
